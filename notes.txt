@@ -1,0 +1,60 @@
+
+
+saya akan membuat api dengan typescript node dan mySql
+
+Enpoin dari aplikasi
+  - /users
+    - /register methode = post
+      req body
+        *full_name : string
+        *email: string| email
+        *password  :string|minimal 6 car
+      res success
+        status : "success"
+        data : 
+          id: number
+          email : string
+      res error
+        status : "error"
+        message : error message
+    -/login methode = post
+      req body
+        *email: string| email
+        *password  :string|minimal 6 car
+      res success
+        status : "success"
+        data : 
+          token: string
+          refresh_token : string
+      res error
+        status : "error"
+        message : error message
+    -/ methode = get
+      req : null
+      res success
+        status : "success"
+        data : 
+          email: string
+          name : string
+      res error
+        status : "error"
+        message : error message
+  - /todo
+    create todo
+    enpoin = "/todo"
+    methode = post
+    req
+      * title : string
+      * done : boolean
+    res success
+      status : "success"
+      data : 
+        id: number
+        title : string
+        done : boolean
+    res error
+      status : "error"
+      message : error message
+    
+
+
